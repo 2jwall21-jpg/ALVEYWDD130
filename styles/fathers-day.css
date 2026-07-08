@@ -1,0 +1,81 @@
+/* Fathers Day themed overrides for the main page. Scoped under .fathers-day body class */
+
+/* Hero tweaks */
+.fathers-day #callout {
+  background: linear-gradient(135deg, rgba(20,40,60,0.85), rgba(5,80,120,0.7));
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  text-shadow: 2px 2px rgba(0,0,0,0.4);
+}
+
+/* Add a Father's Day ribbon in the header */
+.fathers-day header::after {
+  content: "Father's Day — Celebrate Movement & Recovery";
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: rgba(255,215,0,0.15);
+  color: #2b2b2b;
+  padding: 8px 0;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  border-top: 1px dashed rgba(0,0,0,0.05);
+}
+
+/* Accent colors */
+.fathers-day body {
+  background: linear-gradient(180deg, #f6f7f9 0%, #eef6ff 100%);
+}
+
+.fathers-day #wrapper {
+  background: #ffffff;
+  border-color: #e2c58a;
+}
+
+/* Box styling for content */
+.fathers-day .box {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  border-radius: 14px;
+  padding: 24px 28px;
+}
+
+/* Button styles */
+.fathers-day button {
+  background: linear-gradient(90deg,#2b556f,#597a9a);
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.fathers-day button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(43,85,111,0.25);
+}
+
+/* Small gift card component */
+.fathers-day .gift-card {
+  background: linear-gradient(180deg,#fff,#f7f6ef);
+  border: 2px solid #e9e0c9;
+  padding: 12px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+/* Responsive tweak: ensure hero text remains readable */
+@media (max-width: 745px) {
+  .fathers-day #callout {
+    font-size: 1.1rem;
+    padding: 18px;
+    border-radius: 6px;
+  }
+  .fathers-day .box {
+    padding: 14px;
+  }
+}
